@@ -40,7 +40,7 @@ Obsidian, Google Gemini, and X (formerly Twitter) integrated CLI tool to superch
 1.  **Clone the repository:**
 
     ```sh
-    git clone https://github.com/your-username/obsidian-ai-cli.git
+    git clone https://github.com/Yoshinori-Imada/obsidian-ai-cli.git
     cd obsidian-ai-cli
     ```
 

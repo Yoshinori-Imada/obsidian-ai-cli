@@ -38,7 +38,7 @@ Obsidian、Google Gemini、そして X (旧 Twitter) を統合し、メモ作成
 1.  **リポジトリをクローン:**
 
     ```sh
-    git clone https://github.com/your-username/obsidian-ai-cli.git
+    git clone https://github.com/Yoshinori-Imada/obsidian-ai-cli.git
     cd obsidian-ai-cli
     ```
 
