@@ -1,12 +1,7 @@
-// @ts-ignore
 import * as dotenv from 'dotenv';
-// @ts-ignore
 import * as fs from 'fs/promises';
-// @ts-ignore
 import { ObsidAX } from './core/ObsidAX.ts';
-// @ts-ignore
 import { AppMode } from './types/constants.ts';
-// @ts-ignore
 import { TEXT } from './config/text.ts';
 
 dotenv.config();
@@ -72,7 +67,6 @@ function validateMode(modeInput: string | undefined): AppMode {
     
     const mode = validateMode(modeInput);
 
-    // @ts-ignore
     const app = new ObsidAX({
         apiKey: API_KEY,
         vaultPath: VAULT_PATH,

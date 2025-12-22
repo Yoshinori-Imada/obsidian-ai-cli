@@ -1,25 +1,14 @@
-// @ts-ignore
 import * as path from 'path';
-// @ts-ignore
 import { GoogleGenAI } from "@google/genai";
-// @ts-ignore
 import { AppMode } from '../types/constants.ts';
-// @ts-ignore
 import type { ModeStrategy, ObsidAXConfig } from '../types/interfaces.ts';
-// @ts-ignore
 import { ObsidianService } from './ObsidianService.ts';
-// @ts-ignore
 import { createNoteContent } from "../templates/obsidianNote.ts";
-// @ts-ignore
 import { DebugStrategy } from "../strategies/DebugStrategy.ts";
-// @ts-ignore
 import { GeneralStrategy } from "../strategies/GeneralStrategy.ts";
-// @ts-ignore
 import { XPostStrategy } from "../strategies/XPostStrategy.ts";
-// @ts-ignore
 import { TEXT } from '../config/text.ts';
 
-// @ts-ignore
 export class ObsidAX {
     private genAI: GoogleGenAI;
     private config: ObsidAXConfig;

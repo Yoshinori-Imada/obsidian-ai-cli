@@ -1,4 +1,3 @@
-// @ts-ignore
 export const TEXT = {
     prompts: {
         general: "Please summarize the following content and extract key points in bullet points.",

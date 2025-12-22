@@ -1,9 +1,6 @@
-// @ts-ignore
 import { TwitterApi } from 'twitter-api-v2';
-// @ts-ignore
 import { TEXT } from '../config/text.ts';
 
-// @ts-ignore
 export class XService {
     private client: TwitterApi;
 

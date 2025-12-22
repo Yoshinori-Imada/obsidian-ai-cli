@@ -1,19 +1,11 @@
-// @ts-ignore
 import { ObsidianService } from '../core/ObsidianService.ts';
-// @ts-ignore
 import { TEXT } from '../config/text.ts';
-// @ts-ignore
 import { AppMode } from '../types/constants.ts';
-// @ts-ignore
 import { BaseStrategy } from './BaseStrategy.ts';
-// @ts-ignore
 import { XService } from '../core/XService.ts';
-// @ts-ignore
 import { select, confirm } from '@inquirer/prompts';
-// @ts-ignore
 import type { XPostCandidate } from '../types/interfaces.ts';
 
-// @ts-ignore
 export class XPostStrategy extends BaseStrategy {
     protected mode = AppMode.X_POST;
     protected promptTemplate = TEXT.prompts.xPost;

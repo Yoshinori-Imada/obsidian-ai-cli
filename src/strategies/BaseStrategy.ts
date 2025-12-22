@@ -1,15 +1,9 @@
-// @ts-ignore
 import { GoogleGenAI } from "@google/genai";
-// @ts-ignore
 import { ObsidianService } from '../core/ObsidianService.ts';
-// @ts-ignore
 import type { ModeStrategy } from '../types/interfaces.ts';
-// @ts-ignore
 import { AppMode } from '../types/constants.ts';
-// @ts-ignore
 import { TEXT } from '../config/text.ts';
 
-// @ts-ignore
 export abstract class BaseStrategy implements ModeStrategy {
     protected abstract mode: AppMode;
     protected abstract promptTemplate: string;

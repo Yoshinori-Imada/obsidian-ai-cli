@@ -1,8 +1,5 @@
-// @ts-ignore
 import { GoogleGenAI } from "@google/genai";
-// @ts-ignore
 import { AppMode } from './constants.ts';
-// @ts-ignore
 import { ObsidianService } from '../core/ObsidianService.ts';
 
 export interface ObsidAXConfig {
