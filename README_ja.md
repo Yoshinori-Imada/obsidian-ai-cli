@@ -82,6 +82,10 @@ APP_LANG="ja" # 日本語に設定 (デフォルトは英語の場合があり�
 
 Geminiに送信されるシステムプロンプトを、**Obsidian Vault内のMarkdownファイルとして直接編集**できるようになりました。
 
+<p align="center">
+  <img src="assets/customprompt.png" alt="custom prompt" width="700">
+</p>
+
 1.  任意のコマンドを実行します（例: `ai "こんにちは"`）。
 2.  Obsidian Vaultのルートに **`_AI_Prompts`** というフォルダが自動的に作成されます。
 3.  `_AI_Prompts/prompts/{lang}/` の中に、各モード用のMarkdownファイル（`general.md`, `xpost.md` など）が生成されます。
