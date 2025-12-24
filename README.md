@@ -83,6 +83,9 @@ APP_LANG="ja" # Switch to Japanese
 ### Customizing Prompts (New in v1.1.0!)
 
 You can fully customize the system prompts sent to Gemini directly from your Obsidian Vault.
+<p align="center">
+  <img src="assets/customprompt-en.png" alt="custom prompt" width="700">
+</p>
 
 1.  Run any command (e.g., `ai "hello"`).
 2.  The tool will automatically create a folder named **`_AI_Prompts`** in your Obsidian Vault.
