@@ -20,8 +20,6 @@ export class PromptLoader {
      * @returns プロンプト本文
      */
     async load(promptName: string): Promise<string> {
-        // ファイルパス: VAULT/_AI_Prompts/prompts/{lang}/{promptName}.md
-        // Obsidianで表示できるように隠しフォルダではなく通常のフォルダを使用
         const filePath = path.join(this.vaultPath, '_AI_Prompts', 'prompts', this.lang, `${promptName}.md`);
 
         try {
@@ -36,15 +34,12 @@ export class PromptLoader {
 
         } catch (error: any) {
             if (error.code === 'ENOENT') {
-                // ファイルがない場合はデフォルトを作成して返す（初期化）
                 const defaultContent = DEFAULT_PROMPTS[promptName];
                 if (defaultContent) {
                     await this.createDefault(filePath, defaultContent);
-                    // 書き込んだファイルから本文だけを抽出して返す
                     const { content } = matter(defaultContent);
                     return content.trim();
                 }
-                // もし未知のpromptNameが来たらエラー
                 throw new Error(`No default prompt found for: ${promptName}`);
             }
             
